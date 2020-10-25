@@ -4,7 +4,7 @@ import UserListComp from "./UserListComp";
 const UserList = () => {
   return (
     <section className="UserList">
-      <h1>This is the UserList page</h1>
+      <h1>UserList</h1>
       <UserListComp />
     </section>
   );
