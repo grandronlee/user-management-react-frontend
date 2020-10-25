@@ -7,6 +7,8 @@ const columns = [
   { field: 'email', headerName: 'Email', width: 320 },
 ];
 
+const USER_ENDPOINT = process.env.REACT_APP_USER_ENDPOINT
+
 class UserListComp extends React.Component {
     constructor(props) {
       super(props);
@@ -18,7 +20,7 @@ class UserListComp extends React.Component {
     }
   
     componentDidMount() {
-      fetch("http://localhost:8080/users/", 
+      fetch(USER_ENDPOINT, 
           { 
             mode: "cors", 
             headers: {"Access-Control-Allow-Origin":"*"}
